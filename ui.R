@@ -7,9 +7,9 @@ shinyUI(pageWithSidebar(
   numericInput('sigma', 'Please, enter the standard deviation (1-10)', 1, min = 1, max = 10, step = 1)
   ),
   mainPanel(
-    p('This shiny app is for illustrating the law of large numbers. The distribution of the random draws from a normal 
-       distribution are depicted in a histogram. The sample size, the mean and the standard
-       deviations are user-supplied.'),
+    p('This shiny app is for illustrating the normal distribution. The empirical distribution of the random draws from a normal 
+       density is depicted in a histogram. The sample size, the mean and the standard
+       deviations are supplied by the user.'),
     plotOutput('newHist'),
     verbatimTextOutput('sampleMean')
     
