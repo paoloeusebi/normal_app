@@ -2,6 +2,7 @@
 
 shinyServer( function(input, output) {
   output$newHist <- renderPlot({
+  	seed=123
     n <- input$n
     mu <- input$mean
     sigma <- input$sigma
